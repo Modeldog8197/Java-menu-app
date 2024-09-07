@@ -23,6 +23,10 @@ public class menuapp {
         double sol = (a * b) / 2;
         System.out.println("the area is: " + sol);
     }
+    public static void artrapezium(double a, double b, double c){
+        double sol = ((a+b)*c)/2;
+        System.out.println("the area is: " + sol);
+    }
 
     public static void main(String[] args) {
         Scanner ip = new Scanner(System.in);
@@ -33,6 +37,7 @@ public class menuapp {
             System.out.println("enter 2 for circle");
             System.out.println("enter 3 for rectangle");
             System.out.println("enter 4 for triangle");
+            System.out.println("enter 5 for trapezium");
             int opt = ip.nextInt();
             switch (opt) {
                 case 1:
@@ -56,6 +61,13 @@ public class menuapp {
                     double e = ip.nextInt();
                     double f = ip.nextInt();
                     artriangle(e, f);
+                    break;
+                case 5:
+                    System.out.println("enter parallel sides and height");
+                    double g = ip.nextInt();
+                    double h = ip.nextInt();
+                    double i = ip.nextInt();
+                    artrapezium(g, h, i);
                     break;
                 default:
                     System.out.println("Please enter a correct value");
