@@ -27,6 +27,10 @@ public class menuapp {
         double sol = ((a+b)*c)/2;
         System.out.println("the area is: " + sol);
     }
+    public static void arparallelogram(double a, double b){
+        double sol = (1/2)*a*b;
+        System.out.println(sol);
+        
 
     public static void main(String[] args) {
         Scanner ip = new Scanner(System.in);
@@ -38,6 +42,7 @@ public class menuapp {
             System.out.println("enter 3 for rectangle");
             System.out.println("enter 4 for triangle");
             System.out.println("enter 5 for trapezium");
+            System.out.printlmn("enter 6 for parallelogram");
             int opt = ip.nextInt();
             switch (opt) {
                 case 1:
@@ -69,6 +74,11 @@ public class menuapp {
                     double i = ip.nextInt();
                     artrapezium(g, h, i);
                     break;
+                case 6:
+                    System.out.println("enter the diagnols of the parallelogram");
+                    double j = ip.nextInt();
+                    double k = ip.nextInt();
+                    arparallelogram(j,k);
                 default:
                     System.out.println("Please enter a correct value");
 
@@ -83,5 +93,6 @@ public class menuapp {
     }
 
 }
+
 
 
